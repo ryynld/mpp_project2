@@ -12,7 +12,7 @@
     transition: 0.4s;
   }
   
-  .active, .accordion:hover {
+  .aktif, .accordion:hover {
     background-color: #ccc;
   }
   
@@ -24,7 +24,7 @@
     margin-left: 5px;
   }
   
-  .active:after {
+  .aktif:after {
     content: "\2212";
   }
   
@@ -34,6 +34,24 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  .panel h4{
+    color: #FF6F61;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .panel h6{
+    color: #ff1500;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
   }
 
 /**************************************/
@@ -80,7 +98,7 @@ h6 {
 
 h4,
 h5,
-h6 {
+h6{
     font-weight: 400;
 }
 
@@ -210,7 +228,7 @@ img {
     
     #nav .nav-link:hover,
     #nav .nav-link.active {
-        color: #4F84C4;
+        color: #FF6F61;
     }
 }
 
@@ -321,6 +339,14 @@ img {
     .section-header h2 {
         font-size: 40px;
     }
+
+    .panel h4{
+        font-size: 17px;
+    }
+
+    .panel h6{
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 575.98px) {
@@ -394,92 +420,16 @@ img {
     }
 }
 
-
-
-/**************************************/
-/*************** Team CSS *************/
-/**************************************/
-.team {
-    position: relative;
-    padding: 100px 0 70px 0;
-    background: #f6f8fa;
-}
-
-.team .team-item {
-    margin-bottom: 30px;
-    overflow: hidden;
-}
-
-.team .team-item .team-img {
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-    
-}
-
-.team .team-item .team-link {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 111, 97, .95);
-    transition: 0.3s;
-    opacity: 0;
-}
-
-.team .team-item .team-link a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    margin: 0 2px -100px 2px;
-    padding: 6px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #FF6F61;
-    background: #ffffff;
-    border-radius: 4px;
-}
-
-.team .team-item:hover .team-link {
-    opacity: 1;
-}
-
-.team .team-item:hover .team-link a {
-    margin: 0 2px;
-}
-
-.team .team-item .team-link a:hover {
-    color: #ffffff;
-    background: #111111;
-}
-
-.team .team-item .team-info {
-    position: relative;
-    width: 100%;
-    padding-top: 15px;
-}
-
-.team .team-item .team-info h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.team .team-item .team-info p {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-
-
 /**************************************/
 /************ Services CSS ************/
 /**************************************/
+.container h4{
+    color: #FF6F61;
+    letter-spacing: 3px;
+    /* margin-bottom: 25px; */
+    text-align: center;
+}
+
 .service {
     position: relative;
     padding: 100px 0 40px 0;
