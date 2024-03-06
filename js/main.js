@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Back to top button
+    // Tombol kembali ke atas
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
